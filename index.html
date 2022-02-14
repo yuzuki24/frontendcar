@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Tasting Cars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Cars">
+    <meta name="Description" content="Tasting the cars">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/cssreset-min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="favorite.js"></script>
+</head>
+<!--ヘッダー-->
+
+<body>
+    <header class="page-header">
+
+        <h1>
+            <a href="index.html"><img class="logo" src="assets/img/logo/tc-black-logo.svg" alt="tasting cars"></a>
+        </h1>
+
+        <nav>
+            <button type="button" class="btn btn-info">Click here for a list</button>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="#">Notice</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 align="center">Find your favorite car!</h1>
+
+
+    <!--new model car-->
+    <h2 align="center">Recommended new model car</h2>
+    <h5 align="center">New car lineup</h5>
+
+    <div class="newcar">
+        <div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car1.png" alt="matuda"><br>
+                <div class="group">
+                    <div>
+                        <p>matuda<br>Civic</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br> Favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car2.png" alt="suzuki"><br>
+                <div class="group">
+                    <div>
+                        <p>suzuki<br>Inspire</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br>favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car3.png" alt="honda"><br>
+                <div class="group">
+                    <div>
+                        <p>honda<br>Rafaga</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br> Favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+                <div class="group">
+                    <div>
+                        <p>honda<br>Odyssey</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br>favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+                <div class="group">
+                    <div>
+                        <p>nissan<br>Orthia</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br> Favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+                <div class="group">
+                    <div>
+                        <p>benz<br>Escudo</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br>favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car7.png" alt="toyota"><br>
+                <div class="group">
+                    <div>
+                        <p>toyota<br>Storia</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br> Favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car8.png" alt="bmw"><br>
+                <div class="group">
+                    <div>
+                        <p>bmw<br>Cuore</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br>favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+            <div class="kuruma">
+                <img src="assets/img/catalog/content/car9.png" alt="benz"><br>
+                <div class="group">
+                    <div>
+                        <p>benz<br>Consorte</p>
+                    </div>
+                    <div>
+                        <button type="button">Add to<br> Favourites<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark">view the details</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--車種から探す-->
+
+    <h3 align="center">Search by car model</h3>
+    <div class="container">
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car1.png" alt="matuda"><br>
+            <h4>Light car<input type="checkbox"></h4>
+
+        </div>
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car2.png" alt="suzuki"><br>
+            <h4>Compact car<input type="checkbox"></h4>
+
+        </div>
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car3.png" alt="honda"><br>
+            <h4>Minivan<input type="checkbox"></h4>
+
+        </div>
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+            <h4>sedan<input type="checkbox"></h4>
+
+        </div>
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+            <h4>coupe<input type="checkbox"></h4>
+
+        </div>
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+            <h4>Station Wagon<input type="checkbox"></h4>
+
+        </div>
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car7.png" alt="toyota"><br>
+            <h4>Suv<input type="checkbox"></h4>
+
+        </div>
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car8.png" alt="bmw"><br>
+            <h4>Open car<input type="checkbox"></h4>
+
+        </div>
+        <div class="modelcar">
+            <img src="assets/img/catalog/content/car9.png" alt="benz"><br>
+            <h4>One box<input type="checkbox"></h4>
+
+        </div>
+        <div>
+            <h3>Option search</h3>
+            Manufacturer:
+            <select name="manufacturer">
+            <option value="matuda">matuda</option>
+            <option value="suzuki">suzuki</option>
+            <option value="honda">honda</option>
+            <option value="nissan">nissan</option>
+            <option value="bmw">bmw</option>
+            <option value="benz">benz</option>
+            <option value="toyota">toyota</option>
+        </select> Displacement:
+            <select name="displacement">
+                <option value=1>1000cc</option>
+                <option value=2>1500cc</option>
+                <option value=3>2000cc</option>
+                <option value=4>2500cc</option>
+                <option value=5>3000cc</option>
+            </select><br> AT/MT:
+            <div class="sample1Area" id="makeImg">
+                <input type="radio" name="sample1radio" id="sample1on" checked="">
+                <label for="sample1on">AT</label>
+                <input type="radio" name="sample1radio" id="sample1off">
+                <label for="sample1off">MT</label>
+            </div>
+            <button type="button" class="btn btn-outline-secondary">Search by this condition</button>
+
+        </div>
+
+
+    </div>
+
+
+    <!--メーカーから探す-->
+    <div class="upright">
+        <h3 align="center">Search by manufacturer</h3>
+        Manufacturer:
+        <select name="manufacturer">
+        <option value="matuda">matuda</option>
+        <option value="suzuki">suzuki</option>
+        <option value="honda">honda</option>
+        <option value="nissan">nissan</option>
+        <option value="bmw">bmw</option>
+        <option value="benz">benz</option>
+        <option value="toyota">toyota</option>
+    </select>Vehicle type:
+        <select name="vehicle type">
+        <option value=1>Light car</option>
+        <option value=2>Compact car</option>
+        <option value=3>Minivan</option>
+        <option value=4>sedan</option>
+        <option value=5>coupe</option>
+        <option value=5>Station Wagon</option>
+        <option value=5>Suv</option>
+        <option value=5>Open car</option>
+        <option value=5>One box</option>
+    </select>
+        <div class="container2">
+            <div class="modelcar">
+                <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+                <h4>sedan<input type="checkbox"></h4>
+
+            </div>
+            <div class="modelcar">
+                <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+                <h4>coupe<input type="checkbox"></h4>
+
+            </div>
+            <div class="modelcar">
+                <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+                <h4>Station Wagon<input type="checkbox"></h4>
+
+            </div>
+        </div>
+        <h3>Option search</h3>
+        <div>
+            Displacement:
+            <select name="displacement">
+                <option value=1>1000cc</option>
+                <option value=2>1500cc</option>
+                <option value=3>2000cc</option>
+                <option value=4>2500cc</option>
+                <option value=5>3000cc</option>
+            </select><br>AT/MT:
+            <div class="sample1Area" id="makeImg">
+                <input type="radio" name="sample1radio" id="sample1on" checked="">
+                <label for="sample1on">AT</label>
+                <input type="radio" name="sample1radio" id="sample1off">
+                <label for="sample1off">MT</label>
+            </div>
+            <button type="button" class="btn btn-outline-secondary">Search by this condition</button>
+
+        </div><br>
+        <!--フリーワード検索-->
+        <div>
+            <h3>Free Word Search</h3>
+            <input type="text">
+            <button type="button" class="btn btn-outline-secondary">Search</button>
+
+        </div>
+    </div><br>
+    <div>
+        <h3>News<button type="button" class="btn btn-info">Click here for a list</button></h3>
+        <ul class="news-list">
+            <li class="item">
+                <a href="#">
+                    <p class="date">2022/2/16</p>
+                    <p class="title">New model cars have arrived.</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <p class="date">2022/2/16</p>
+                    <p class="title">Fixed a bug on this site.</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <p class="date">2022/2/16</p>
+                    <p class="title">New bmw items have arrived.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--フッター-->
+    <footer>
+        <div class="foot">
+            <div class="menu-left">
+                <a href="index.html"><img class="logo" src="assets/img/logo/tc-black-logo.svg" alt="tasting cars"></a>
+                <p>
+                    〒980-0014<br> 1-6-23 Honcho, Aoba-ku,<br> Sendai City, Miyagi Prefecture<br> INTELLEX Sendai Building 8F
+                </p>
+            </div>
+            <div class="menu-left">
+                <h5><a href="#">Test drive search</a></h5>
+                <h5>
+                    <a href="#">Favorite list</a>
+                </h5>
+                <h5>
+                    <a href="#">notice</a>
+                </h5>
+            </div>
+            <div class="menu-right">
+                <h5>
+                    <a href="#">About service</a>
+                </h5>
+                <h5>
+                    <a href="#">privacy policy</a>
+                </h5>
+                <h5>
+                    <a href="#">Terms of service</a>
+                </h5>
+            </div>
+        </div>
+        <div class="copy">
+            <small class="cmark">Copyright</small>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
