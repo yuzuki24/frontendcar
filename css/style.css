@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+p {
+    color: black;
+    margin-bottom: auto;
+}
+
 html {
     font-size: 100%;
 }
@@ -20,6 +25,7 @@ a {
 
 img {
     max-width: 100%;
+    position: relative;
 }
 
 .logo {
@@ -27,12 +33,30 @@ img {
     margin-top: 14px;
 }
 
+.first01 {
+    max-width: auto;
+    height: 300px;
+    background-color: rgba(168, 168, 168, 0.5);
+    opacity: 0.5;
+}
+
 .main-nav {
     display: flex;
     font-size: 1.00;
     text-transform: uppercase;
-    margin-top: 35px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 40px;
+    bottom: 0px;
     list-style: none;
+    float: right;
+}
+
+.button {
+    float: right;
+    border: 2px solid white;
+    color: white;
 }
 
 .main-nav li {
@@ -40,64 +64,121 @@ img {
 }
 
 .main-nav a {
-    color: black;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .main-nav a:hover {
-    color: #0bd;
+    color: rgb(94, 163, 175);
 }
 
 .page-header {
     display: flex;
     justify-content: space-between;
-    background: rgb(61, 150, 235);
+    background: rgb(81, 116, 148);
+    height: 90px;
 }
 
 
 /*新型車*/
 
-.newcar {
-    overflow-x: scroll;
-    border: 1px solid #999;
+.swiper {
+    position: relative;
+    width: max-length;
+    height: 300px;
+}
+
+.swiper--wrapper {
+    /* wrapperのサイズを調整 */
+    width: 100%;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.swiper-slide {
+    /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+    color: #d3d3d3;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
+    border: #bbbcbe 1px solid;
     padding: 10px;
-}
-
-.newcar>div {
-    width: 300%;
-    display: flex;
-}
-
-.newcar>div>div {
-    border: 1px solid #999;
-    padding: 10px 20px;
     margin: 10px;
-    background: #f2f2f2;
+    position: relative;
+}
+
+.swiper-pagination {
+    position: absolute;
+    margin-bottom: 400px;
+}
+
+@media(max-width:800px) {
+    .swiper-pagination {
+        position: absolute;
+        margin-bottom: 1130px;
+    }
+}
+
+.swiper-pagination-bullets {
+    width: 100px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 0 0 10px !important;
+    background: #fff;
+}
+
+.swiper-pagination-bullet:first-child {
+    margin: 0 !important;
 }
 
 .group {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .btn-outline-dark {
     text-align: center;
 }
 
-.container {
+.layout {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    transform: scale(0.8);
     float: left;
-    overflow: auto;
-    background: rgb(231, 229, 229);
-    clear: both;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    grid-gap: 0px;
 }
 
 .modelcar {
-    margin-left: 50px;
-    width: 28%;
-    justify-content: space-between;
+    position: relative;
+    color: #000000;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    padding: 5px;
+    margin: 8px;
+}
+
+.modelcar img {
+    position: relative;
+    width: 130px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.group02 {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -105,7 +186,7 @@ img {
 
 .sample1Area {
     position: relative;
-    margin: 0px;
+    margin: 5px;
     width: 110px;
     height: 30px;
 }
@@ -170,24 +251,34 @@ img {
 }
 
 input[type="checkbox"] {
-    margin-left: 30px;
-    padding: 0%;
-    transform: scale(2.5);
-}
-
-.container2 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-left: auto;
+    padding: 0%;
+    transform: scale(1.5);
+}
+
+.model {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #eee;
 }
 
 
 /*--news--*/
 
 .news-list {
+    max-width: 900px;
     list-style: none outside;
-    margin: 0;
-    padding: 0;
+    margin: 0% auto;
+}
+
+.news {
+    max-width: 900px;
+    font-size: xx-large;
+    border-bottom: 3px solid rgb(0, 100, 131);
+    margin: 0% auto;
+    display: block;
 }
 
 .news-list .item a {
@@ -200,12 +291,8 @@ input[type="checkbox"] {
     padding: 20px 20px;
 }
 
-.news-list .item:first-child a {
-    border-top: 1px solid #CCC;
-}
-
 .news-list .item .date {
-    margin: 0;
+    margin: 0 auto;
     min-width: 120px;
     font-size: 16px;
     color: #999;
@@ -213,12 +300,12 @@ input[type="checkbox"] {
 }
 
 .news-list .item .title {
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
 }
 
 .news-list .item a:hover .title {
-    color: #00F;
+    color: rgb(0, 195, 255);
 }
 
 @media screen and (max-width: 767px) {
@@ -242,7 +329,7 @@ a {
 }
 
 body {
-    margin: 20px;
+    margin: 0% auto;
 }
 
 
@@ -250,7 +337,21 @@ body {
 
 .foot {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: rgba(44, 44, 44, 0.8);
+}
+
+.foot .menu-left::after {
+    position: absolute;
+    /*--positionを追加--*/
+    top: 0;
+    left: 100%;
+    margin: 0 1rem;
+    content: "";
+    width: 1px;
+    border: solid 1px;
+    /*--縦線の太さ(幅)--*/
+    height: 100%;
 }
 
 .copy {
@@ -258,8 +359,23 @@ body {
     background: rgb(100, 198, 237);
 }
 
+.me-ka- {
+    justify-content: space-around;
+}
+
+.set {
+    margin: 40px;
+}
+
+.btn {
+    margin: 6px;
+}
+
 .container2 {
-    background: rgb(230, 230, 230);
+    box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
+    border: #ffffff 1px solid;
+    height: 620px;
+    overflow: hidden;
 }
 
 .upright {
@@ -269,4 +385,51 @@ body {
 .btn-info {
     float: right;
     position: relative;
+}
+
+.layout01 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+.word {
+    display: block;
+}
+
+#area {
+    box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
+    border: #ffffff 1px solid;
+}
+
+.freeword {
+    box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
+    border: #ffffff 1px solid;
+    overflow: hidden;
+}
+
+.news {
+    font-size: xx-large;
+    border-bottom: 3px solid rgb(0, 100, 131);
+}
+
+.menuleft {
+    margin: 0px;
+}
+
+.line {
+    margin-top: 15px;
+    width: 4px;
+    height: 150px;
+    background-color: rgb(14, 152, 216);
+}
+
+.setumei {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+}
+
+.sirusi {
+    text-align: right;
 }
