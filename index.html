@@ -10,7 +10,6 @@
     <meta name="Description" content="Tasting the cars">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/cssreset-min.css">
     <link rel="stylesheet" href="css/style.css" media="screen">
 
     <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
@@ -62,7 +61,7 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car1.png" alt="matuda"><br>
+                <img src="assets/img/catalog/slideshow/top/car1.jpg" alt="matuda" class="img_size"><br>
                 <div class="group">
                     <div>
                         <p>matuda<br>Civic</p>
@@ -74,7 +73,7 @@
                 <button type="button" class="btn btn-outline-dark">view the details</button>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car2.png" alt="suzuki"><br>
+                <img src="assets/img/catalog/slideshow/top/car2.jpg" alt="suzuki" class="img_size"><br>
                 <div class="group">
                     <div>
                         <p>suzuki<br>Inspire</p>
@@ -86,7 +85,7 @@
                 <button type="button" class="btn btn-outline-dark">view the details</button>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car3.png" alt="honda"><br>
+                <img src="assets/img/catalog/slideshow/top/car3.jpg" alt="honda" class="img_size"><br>
                 <div class="group">
                     <div>
                         <p>honda<br>Rafaga</p>
@@ -98,7 +97,7 @@
                 <button type="button" class="btn btn-outline-dark">view the details</button>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+                <img src="assets/img/catalog/slideshow/top/car4.jpg" alt="honda" class="img_size"><br>
                 <div class="group">
                     <div>
                         <p>honda<br>Odyssey</p>
@@ -110,7 +109,7 @@
                 <button type="button" class="btn btn-outline-dark">view the details</button>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+                <img src="assets/img/catalog/slideshow/top/car5.jpg" alt="nissan" class="img_size"><br>
                 <div class="group">
                     <div>
                         <p>nissan<br>Orthia</p>
@@ -122,7 +121,7 @@
                 <button type="button" class="btn btn-outline-dark">view the details</button>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+                <img src="assets/img/catalog/slideshow/top/car6.jpg" alt="benz" class="img_size"><br>
                 <div class="group">
                     <div>
                         <p>benz<br>Escudo</p>
@@ -134,7 +133,7 @@
                 <button type="button" class="btn btn-outline-dark">view the details</button>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car7.png" alt="toyota"><br>
+                <img src="assets/img/catalog/slideshow/top/car7.jpg" alt="toyota" class="img_size"><br>
                 <div class="group">
                     <div>
                         <p>toyota<br>Storia</p>
@@ -146,25 +145,13 @@
                 <button type="button" class="btn btn-outline-dark">view the details</button>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car8.png" alt="bmw"><br>
+                <img src="assets/img/catalog/slideshow/top/car8.jpg" alt="bmw" class="img_size"><br>
                 <div class="group">
                     <div>
                         <p>bmw<br>Cuore</p>
                     </div>
                     <div>
                         <button type="button">Unfavorite<img src="assets/img/icon/pinCheck.png" height ="20" width="25"/></button>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-outline-dark">view the details</button>
-            </div>
-            <div class="swiper-slide">
-                <img src="assets/img/catalog/content/car9.png" alt="benz"><br>
-                <div class="group">
-                    <div>
-                        <p>benz<br>Consorte</p>
-                    </div>
-                    <div>
-                        <button type="button">Add to<br> Favourites<img src="assets/img/icon/pinUncheck.png" height ="20" width="25"/></button>
                     </div>
                 </div>
                 <button type="button" class="btn btn-outline-dark">view the details</button>
@@ -179,123 +166,123 @@
 
 
     <!--車種から探す-->
+    <div class="main">
+        <div class="layout01">
+            <div id="area">
+                <h3 align="center">Search by car model</h3>
+                <div class="container">
 
-    <div class="layout01">
-        <div id="area">
-            <h3 align="center">Search by car model</h3>
-            <div class="container">
-
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car1.png" alt="matuda"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>Light car</p>
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car1.png" alt="matuda"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>Light car</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
                         </div>
-                        <div>
-                            <input type="checkbox">
+
+                    </div>
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car2.png" alt="suzuki"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>Compact car</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car3.png" alt="honda"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>Minivan</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
                         </div>
                     </div>
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>sedan</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
 
-                </div>
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car2.png" alt="suzuki"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>Compact car</p>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                        </div>
                     </div>
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>coupe</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
 
-                </div>
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car3.png" alt="honda"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>Minivan</p>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                        </div>
                     </div>
-                </div>
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>sedan</p>
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>Station Wagon</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
                         </div>
-                        <div>
-                            <input type="checkbox">
-                        </div>
-                    </div>
 
-                </div>
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>coupe</p>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                        </div>
                     </div>
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car7.png" alt="toyota"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>Suv</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
 
-                </div>
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>Station Wagon</p>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                        </div>
                     </div>
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car8.png" alt="bmw"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>Open car</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
 
-                </div>
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car7.png" alt="toyota"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>Suv</p>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                        </div>
                     </div>
-
-                </div>
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car8.png" alt="bmw"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>Open car</p>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="modelcar">
-                    <img src="assets/img/catalog/content/car9.png" alt="benz"><br>
-                    <div class="setumei">
-                        <div>
-                            <p>One box</p>
-                        </div>
-                        <div>
-                            <input type="checkbox">
+                    <div class="modelcar">
+                        <img src="assets/img/catalog/content/car9.png" alt="benz"><br>
+                        <div class="setumei">
+                            <div>
+                                <p>One box</p>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="me-ka-">
-                <h3><img src="assets/img/icon/delimiter.png" height="20" width="2">Option search</h3>
-                Manufacturer:
-                <select name="manufacturer">
+                <div class="me-ka-">
+                    <h3><img src="assets/img/icon/delimiter.png" height="20" width="2">Option search</h3>
+                    Manufacturer:
+                    <select name="manufacturer">
             <option value="matuda">matuda</option>
             <option value="suzuki">suzuki</option>
             <option value="honda">honda</option>
@@ -304,37 +291,37 @@
             <option value="benz">benz</option>
             <option value="toyota">toyota</option>
         </select> Displacement:
-                <select name="displacement">
+                    <select name="displacement">
                 <option value=1>1000cc</option>
                 <option value=2>1500cc</option>
                 <option value=3>2000cc</option>
                 <option value=4>2500cc</option>
                 <option value=5>3000cc</option>
             </select><br> AT/MT:
-                <div class="sample1Area" id="makeImg">
-                    <input type="radio" name="sample1radio" id="sample1on" checked="">
-                    <label for="sample1on">AT</label>
-                    <input type="radio" name="sample1radio" id="sample1off">
-                    <label for="sample1off">MT</label>
+                    <div class="sample1Area" id="makeImg">
+                        <input type="radio" name="sample1radio" id="sample1on" checked="">
+                        <label for="sample1on">AT</label>
+                        <input type="radio" name="sample1radio" id="sample1off">
+                        <label for="sample1off">MT</label>
+                    </div>
+                    <div class="col-6 mx-auto text-nowrap">
+                        <button type="button" class="btn btn-info rounded-0">Search by this condition<img src="assets/img/icon/arrowButton.png"></button>
+                    </div>
                 </div>
-                <div class="col-6 mx-auto text-nowrap">
-                    <button type="button" class="btn btn-info rounded-0">Search by this condition<img src="assets/img/icon/arrowButton.png"></button>
-                </div>
+
+
+
             </div>
 
+            <!--メーカーから探す-->
+            <div class="layout02">
+                <div class="upright">
 
-
-        </div>
-
-        <!--メーカーから探す-->
-        <div class="layout02">
-            <div class="upright">
-
-                <div class="container2">
-                    <h3 align="center">Search by manufacturer</h3>
-                    <div class="set">
-                        Manufacturer:
-                        <select name="manufacturer">
+                    <div class="container2">
+                        <h3 align="center">Search by manufacturer</h3>
+                        <div class="set">
+                            Manufacturer:
+                            <select name="manufacturer">
                         <option value="matuda">matuda</option>
                         <option value="suzuki">suzuki</option>
                         <option value="honda">honda</option>
@@ -343,7 +330,7 @@
                         <option value="benz">benz</option>
                         <option value="toyota">toyota</option>
                     </select>Vehicle type:
-                        <select name="vehicle type">
+                            <select name="vehicle type">
                         <option value=1>Light car</option>
                         <option value=2>Compact car</option>
                         <option value=3>Minivan</option>
@@ -354,78 +341,79 @@
                         <option value=5>Open car</option>
                         <option value=5>One box</option>
                     </select>
-                    </div>
-                    <div class="model">
-                        <div class="modelcar">
-                            <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
-                            <div class="setumei">
-                                <div>
-                                    <p>sedan</p>
-                                </div>
-                                <div>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
                         </div>
-                        <div class="modelcar">
-                            <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
-                            <div class="setumei">
-                                <div>
-                                    <p>coupe</p>
-                                </div>
-                                <div>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modelcar">
-                            <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
-                            <div class="setumei">
-                                <div>
-                                    <p>Station Wagon</p>
-                                </div>
-                                <div>
-                                    <input type="checkbox">
+                        <div class="model">
+                            <div class="modelcar">
+                                <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+                                <div class="setumei">
+                                    <div>
+                                        <p>sedan</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="modelcar">
+                                <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+                                <div class="setumei">
+                                    <div>
+                                        <p>coupe</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modelcar">
+                                <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+                                <div class="setumei">
+                                    <div>
+                                        <p>Station Wagon</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
 
+                            </div>
                         </div>
-                    </div>
 
-                    <h3><img src="assets/img/icon/delimiter.png" height="20" width="2">Option search</h3>
-                    <div class="set">
-                        Displacement:
-                        <select name="displacement">
+                        <h3><img src="assets/img/icon/delimiter.png" height="20" width="2">Option search</h3>
+                        <div class="set">
+                            Displacement:
+                            <select name="displacement">
                         <option value=1>1000cc</option>
                         <option value=2>1500cc</option>
                         <option value=3>2000cc</option>
                         <option value=4>2500cc</option>
                         <option value=5>3000cc</option>
                         </select><br>AT/MT:
-                        <div class="sample1Area no-warp" id="makeImg">
-                            <input type="radio" name="sample1radio" id="sample1on" checked="">
-                            <label for="sample1on">AT</label>
-                            <input type="radio" name="sample1radio" id="sample1off">
-                            <label for="sample1off">MT</label>
+                            <div class="sample1Area no-warp" id="makeImg">
+                                <input type="radio" name="sample1radio" id="sample1on" checked="">
+                                <label for="sample1on">AT</label>
+                                <input type="radio" name="sample1radio" id="sample1off">
+                                <label for="sample1off">MT</label>
+                            </div>
+
+                            <div class="col-6 mx-auto text-nowrap align-bottom">
+                                <button type="button" class="btn btn-info rounded-0">Search by this condition<img src="assets/img/icon/arrowButton.png"></button><br>
+                            </div>
                         </div>
+                    </div><br>
 
-                        <div class="col-6 mx-auto text-nowrap">
-                            <button type="button" class="btn btn-info rounded-0">Search by this condition<img src="assets/img/icon/arrowButton.png"></button><br>
+
+                    <!--フリーワード検索-->
+                    <div class="freeword">
+                        <h3>Free Word Search</h3>
+                        <input type="text" style="width: 400px; height: 40px;"><br>
+                        <div class="col-6 mx-auto text-nowrap d-flex align-items-end">
+                            <button type="button" class="btn btn-info rounded-0">Search<img src="assets/img/icon/arrowButton.png"></button>
                         </div>
-                    </div>
-                </div><br>
-
-
-                <!--フリーワード検索-->
-                <div class="freeword">
-                    <h3>Free Word Search</h3>
-                    <input type="text" style="width: 400px; height: 40px;"><br>
-                    <div class="col-6 mx-auto text-nowrap">
-                        <button type="button" class="btn btn-info rounded-0">Search<img src="assets/img/icon/arrowButton.png"></button>
                     </div>
                 </div>
-            </div>
-        </div><br>
+            </div><br>
+        </div>
     </div>
     <div class="text-right">
         <p class="news">News<button type="button" class="btn btn-info">Click here for a list</button></p>
@@ -500,8 +488,8 @@
     <!--swiper部分-->
     <script>
         const swiper = new Swiper('.swiper', {
-
             loop: true,
+
             slidesPerView: 4,
             breakpoints: {
                 // 768px以上の場合

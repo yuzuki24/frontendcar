@@ -28,12 +28,20 @@ img {
     position: relative;
 }
 
+.img_size {
+    display: inline-block;
+    height: 160px;
+    max-width: 100%;
+    position: relative;
+}
+
 .logo {
     width: 210px;
     margin-top: 14px;
 }
 
 .first01 {
+    position: relative;
     max-width: auto;
     height: 300px;
     background-color: rgba(168, 168, 168, 0.5);
@@ -77,13 +85,15 @@ img {
     justify-content: space-between;
     background: rgb(81, 116, 148);
     height: 90px;
+    width: 100%;
+    overflow-x: hidden !important;
 }
 
 
 /*新型車*/
 
 .swiper {
-    position: relative;
+    position: absolute;
     width: max-length;
     height: 300px;
 }
@@ -97,6 +107,7 @@ img {
 
 .swiper-slide {
     /* スライド */
+    display: inline-block;
     color: #d3d3d3;
     width: 100%;
     height: 100%;
@@ -105,18 +116,20 @@ img {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #bbbcbe 1px solid;
     padding: 10px;
-    margin: 10px;
+    margin: 9px;
     position: relative;
+    transform: scale(1, 0.9);
+    pointer-events: none;
 }
 
 .swiper-pagination {
-    position: absolute;
+    position: sticky;
     margin-bottom: 400px;
 }
 
 @media(max-width:800px) {
     .swiper-pagination {
-        position: absolute;
+        position: relative;
         margin-bottom: 1130px;
     }
 }
@@ -262,6 +275,7 @@ input[type="checkbox"] {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #eee;
+    max-width: 100%;
 }
 
 
@@ -359,6 +373,7 @@ body {
 
 .me-ka- {
     justify-content: space-around;
+    display: block;
 }
 
 .set {
@@ -367,17 +382,22 @@ body {
 
 .btn {
     margin: 6px;
+    margin-top: auto;
 }
 
 .container2 {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
-    height: 620px;
+    height: auto;
+    max-width: 432px;
+    padding: 0%;
     overflow: hidden;
 }
 
 .upright {
     clear: both;
+    margin-right: auto;
+    height: 34%;
 }
 
 .btn-info {
@@ -388,7 +408,8 @@ body {
 .layout01 {
     display: flex;
     justify-content: space-evenly;
-    margin: 5%;
+    margin: 8%;
+    transform: scale(1.2, 1);
 }
 
 .word {
@@ -398,11 +419,13 @@ body {
 #area {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
+    height: 34%;
 }
 
 .freeword {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
+    height: auto;
     overflow: hidden;
 }
 
@@ -430,4 +453,14 @@ body {
 
 .sirusi {
     text-align: right;
+}
+
+.main {
+    margin-right: auto;
+    margin-left: 4.1%;
+}
+
+.col-6 {
+    margin: auto;
+    padding-bottom: 0%;
 }
