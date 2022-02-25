@@ -123,19 +123,18 @@ img {
 }
 
 .swiper-pagination {
-    position: sticky;
     margin-bottom: 400px;
 }
 
 @media(max-width:800px) {
     .swiper-pagination {
-        position: relative;
         margin-bottom: 1130px;
     }
 }
 
 .swiper-pagination-bullets {
     width: 100px;
+    position: fixed;
 }
 
 .swiper-pagination-bullet {
