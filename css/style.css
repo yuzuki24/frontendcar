@@ -351,6 +351,7 @@ body {
 .foot {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: rgba(44, 44, 44, 0.8);
 }
 
@@ -439,6 +440,7 @@ body {
 
 .line {
     margin-top: 15px;
+    margin-left: 13%;
     width: 4px;
     height: 150px;
     background-color: rgb(14, 152, 216);
