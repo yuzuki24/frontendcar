@@ -43,11 +43,19 @@
             </ul>
         </nav>
     </header>
-    <div class="first01">
-        <h1 align="center">Find your favorite car!</h1>
-        <h3 align="center">Vehicles that are open to the public on the web only at the top and sold only online.</h3>
-        <h3 align="center">You are free to choose.</h3>
 
+    <div class="swiper swiper1">
+        <div class="swiper-wrapper1">
+            <div class="swiper-slide1">
+                <img src="assets/img/catalog/slideshow/top/car1.jpg" class="img_size0">
+            </div>
+            <div class="swiper-slide1">
+                <img src="assets/img/catalog/slideshow/top/car2.jpg" class="img_size0">
+            </div>
+            <div class=" swiper-slide1">
+                <img src="assets/img/catalog/slideshow/top/car3.jpg " class="img_size0">
+            </div>
+        </div>
     </div>
     <div class="swiper-pagination"></div>
     <!--new model car-->
@@ -483,6 +491,16 @@
 
     <!--swiper部分-->
     <script>
+        const swiper1 = new Swiper('.swiper1', {
+            loop: true,
+
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+
+
         const swiper = new Swiper('.swiper', {
             loop: true,
 
@@ -492,10 +510,6 @@
                 768: {
                     slidesPerView: 4
                 }
-            },
-
-            pagination: {
-                el: '.swiper-pagination',
             },
 
             navigation: {
