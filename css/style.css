@@ -463,27 +463,23 @@ body {
     padding-bottom: 0%;
 }
 
-.swiper-slide1 {
-    /* スライド */
-    display: inline-block;
-    width: 100%;
-    height: auto;
+.main-visual {
+    overflow: hidden;
+    position: relative;
 }
 
-.swiper1 {
+.img01 {
+    width: 100%;
+    max-width: 100vw;
+    height: 500px;
+    max-height: 100vw;
+    object-fit: cover;
+}
+
+.textcontent {
     position: absolute;
-    width: auto;
-    height: 300px;
-}
-
-.swiper-wrapper1 {
-    /* wrapperのサイズを調整 */
-    width: 100%;
-    height: 100px;
-    margin-left: 30px;
-}
-
-.img_size0 {
-    max-width: 100%;
-    height: auto;
+    top: 30%;
+    text-align: justify;
+    color: #9944cc;
+    margin-left: 15%;
 }
