@@ -10,13 +10,14 @@ p {
 }
 
 html {
+    width: 100%;
     font-size: 100%;
 }
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.7;
     color: #432;
+    line-height: 1.7;
 }
 
 a {
@@ -25,6 +26,7 @@ a {
 
 img {
     max-width: 100%;
+    max-height: 100%;
     position: relative;
 }
 
@@ -279,10 +281,8 @@ body {
     position: absolute;
     top: 0;
     left: 100%;
-    margin: 0 1rem;
     content: "";
     width: 1px;
-    border: solid 1px;
     height: 100%;
 }
 
@@ -309,15 +309,17 @@ body {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
     height: auto;
-    max-width: 432px;
+    max-width: 90%;
     padding: 0%;
     overflow: hidden;
+    margin-right: 15%;
+    box-sizing: border-box;
 }
 
 .upright {
     clear: both;
-    margin-right: auto;
     height: 34%;
+    max-width: 90%;
 }
 
 .btn-info {
@@ -327,9 +329,9 @@ body {
 
 .layout01 {
     display: flex;
-    justify-content: space-evenly;
-    margin: 8%;
-    transform: scale(1.2, 1);
+    justify-content: center;
+    margin: 3%;
+    max-width: 100%;
 }
 
 .word {
@@ -340,13 +342,18 @@ body {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
     height: 34%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .freeword {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
     height: auto;
+    max-width: 90%;
     overflow: hidden;
+    margin-right: 15%;
+    box-sizing: border-box;
 }
 
 .news {

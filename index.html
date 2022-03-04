@@ -17,9 +17,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+    <link rel="stylesheet" href="style.css" media="screen and (max-width:480px)">
 
 
 </head>
@@ -326,14 +326,14 @@
             </div>
 
             <!--メーカーから探す-->
-            <div class="layout02">
-                <div class="upright">
 
-                    <div class="container2">
-                        <h3 align="center">Search by manufacturer</h3>
-                        <div class="set">
-                            Manufacturer:
-                            <select name="manufacturer">
+            <div class="upright">
+
+                <div class="container2">
+                    <h3 align="center">Search by manufacturer</h3>
+                    <div class="set">
+                        Manufacturer:
+                        <select name="manufacturer">
                         <option value="matuda">matuda</option>
                         <option value="suzuki">suzuki</option>
                         <option value="honda">honda</option>
@@ -342,7 +342,7 @@
                         <option value="benz">benz</option>
                         <option value="toyota">toyota</option>
                     </select>Vehicle type:
-                            <select name="vehicle type">
+                        <select name="vehicle type">
                         <option value=1>Light car</option>
                         <option value=2>Compact car</option>
                         <option value=3>Minivan</option>
@@ -353,82 +353,82 @@
                         <option value=5>Open car</option>
                         <option value=5>One box</option>
                     </select>
-                        </div>
-                        <div class="model">
-                            <div class="modelcar">
-                                <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
-                                <div class="setumei">
-                                    <div>
-                                        <p>sedan</p>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">
-                                    </div>
+                    </div>
+                    <div class="model">
+                        <div class="modelcar">
+                            <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+                            <div class="setumei">
+                                <div>
+                                    <p>sedan</p>
                                 </div>
-                            </div>
-                            <div class="modelcar">
-                                <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
-                                <div class="setumei">
-                                    <div>
-                                        <p>coupe</p>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">
-                                    </div>
+                                <div>
+                                    <input type="checkbox">
                                 </div>
-                            </div>
-                            <div class="modelcar">
-                                <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
-                                <div class="setumei">
-                                    <div>
-                                        <p>Station Wagon</p>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
+                        <div class="modelcar">
+                            <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+                            <div class="setumei">
+                                <div>
+                                    <p>coupe</p>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modelcar">
+                            <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+                            <div class="setumei">
+                                <div>
+                                    <p>Station Wagon</p>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                </div>
+                            </div>
 
-                        <h3><img src="assets/img/icon/delimiter.png" height="20" width="2">Option search</h3>
-                        <div class="set">
-                            Displacement:
-                            <select name="displacement">
+                        </div>
+                    </div>
+
+                    <h3><img src="assets/img/icon/delimiter.png" height="20" width="2">Option search</h3>
+                    <div class="set">
+                        Displacement:
+                        <select name="displacement">
                         <option value=1>1000cc</option>
                         <option value=2>1500cc</option>
                         <option value=3>2000cc</option>
                         <option value=4>2500cc</option>
                         <option value=5>3000cc</option>
                         </select><br>
-                            <div class="change">
-                                <div class="under">
-                                    AT/MT
-                                </div>
-                                <div class="toggle1">
-                                    <input type="checkbox" name="check" />
-                                    <span>MT</span>
-                                    <span>AT</span>
-                                </div>
+                        <div class="change">
+                            <div class="under">
+                                AT/MT
                             </div>
-
-                            <div class="col-6 mx-auto text-nowrap align-bottom">
-                                <button type="button" class="btn btn-info rounded-0">Search by this condition<img src="assets/img/icon/arrowButton.png"></button><br>
+                            <div class="toggle1">
+                                <input type="checkbox" name="check" />
+                                <span>MT</span>
+                                <span>AT</span>
                             </div>
                         </div>
-                    </div><br>
 
-
-                    <!--フリーワード検索-->
-                    <div class="freeword">
-                        <h3>Free Word Search</h3>
-                        <input type="text" style="width: 400px; height: 40px;"><br>
-                        <div class="col-6 mx-auto text-nowrap d-flex align-items-end">
-                            <button type="button" class="btn btn-info rounded-0">Search<img src="assets/img/icon/arrowButton.png"></button>
+                        <div class="col-6 mx-auto text-nowrap align-bottom">
+                            <button type="button" class="btn btn-info rounded-0">Search by this condition<img src="assets/img/icon/arrowButton.png"></button><br>
                         </div>
                     </div>
+                </div><br>
+
+
+                <!--フリーワード検索-->
+                <div class="freeword">
+                    <h3>Free Word Search</h3>
+                    <input type="text" style="width: 400px; height: 40px;"><br>
+                    <div class="col-6 mx-auto text-nowrap d-flex align-items-end">
+                        <button type="button" class="btn btn-info rounded-0">Search<img src="assets/img/icon/arrowButton.png"></button>
+                    </div>
                 </div>
-            </div><br>
+            </div>
+            <br>
         </div>
     </div>
     <div class="text-right">
@@ -553,6 +553,7 @@
             }
         });
     </script>
+
 
 
 </body>
