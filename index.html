@@ -305,12 +305,16 @@
                 <option value=3>2000cc</option>
                 <option value=4>2500cc</option>
                 <option value=5>3000cc</option>
-            </select><br> AT/MT:
-                    <div class="sample1Area" id="makeImg">
-                        <input type="radio" name="sample1radio" id="sample1on" checked="">
-                        <label for="sample1on">AT</label>
-                        <input type="radio" name="sample1radio" id="sample1off">
-                        <label for="sample1off">MT</label>
+            </select><br>
+                    <div class="change">
+                        <div class="under">
+                            AT/MT
+                        </div>
+                        <div class="toggle">
+                            <input type="checkbox" name="check" />
+                            <span>MT</span>
+                            <span>AT</span>
+                        </div>
                     </div>
                     <div class="col-6 mx-auto text-nowrap">
                         <button type="button" class="btn btn-info rounded-0">Search by this condition<img src="assets/img/icon/arrowButton.png"></button>
@@ -396,12 +400,16 @@
                         <option value=3>2000cc</option>
                         <option value=4>2500cc</option>
                         <option value=5>3000cc</option>
-                        </select><br>AT/MT:
-                            <div class="sample1Area no-warp" id="makeImg">
-                                <input type="radio" name="sample1radio" id="sample1on" checked="">
-                                <label for="sample1on">AT</label>
-                                <input type="radio" name="sample1radio" id="sample1off">
-                                <label for="sample1off">MT</label>
+                        </select><br>
+                            <div class="change">
+                                <div class="under">
+                                    AT/MT
+                                </div>
+                                <div class="toggle1">
+                                    <input type="checkbox" name="check" />
+                                    <span>MT</span>
+                                    <span>AT</span>
+                                </div>
                             </div>
 
                             <div class="col-6 mx-auto text-nowrap align-bottom">
@@ -525,6 +533,28 @@
 
         });
     </script>
+    <script>
+        $(".toggle1").on("click", function() {
+            $(".toggle1").toggleClass("checked");
+            if (!$('input[name="check"]').prop("checked")) {
+                $(".toggle1 input").prop("checked", true);
+            } else {
+                $(".toggle1 input").prop("checked", false);
+            }
+        });
+    </script>
+    <script>
+        $(".toggle").on("click", function() {
+            $(".toggle").toggleClass("checked");
+            if (!$('input[name="check"]').prop("checked")) {
+                $(".toggle input").prop("checked", true);
+            } else {
+                $(".toggle input").prop("checked", false);
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
