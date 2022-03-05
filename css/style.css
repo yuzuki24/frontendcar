@@ -30,6 +30,12 @@ img {
     position: relative;
 }
 
+.imgcar {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
 .img_size {
     display: inline-block;
     height: 160px;
@@ -71,7 +77,8 @@ img {
 }
 
 .main-nav li {
-    margin-left: 35px;
+    margin-left: 9%;
+    font-size: large;
 }
 
 .main-nav a {
@@ -97,14 +104,14 @@ img {
 
 .swiper {
     position: absolute;
-    width: max-length;
-    height: 300px;
+    width: 100%;
+    height: 40%;
 }
 
 .swiper--wrapper {
     /* wrapperのサイズを調整 */
     width: 100%;
-    height: 100px;
+    height: 100%;
     margin-left: 30px;
 }
 
@@ -121,30 +128,8 @@ img {
     padding: 10px;
     margin: 9px;
     position: relative;
-    transform: scale(1, 0.9);
     pointer-events: none;
-}
-
-@media(max-width:800px) {
-    .swiper-pagination {
-        margin-bottom: 1130px;
-    }
-}
-
-.swiper-pagination-bullets {
-    width: 100px;
-    position: fixed;
-}
-
-.swiper-pagination-bullet {
-    width: 12px !important;
-    height: 12px !important;
-    margin: 0 0 0 10px !important;
-    background: #fff;
-}
-
-.swiper-pagination-bullet:first-child {
-    margin: 0 !important;
+    transform: scale(1, 0.9);
 }
 
 .group {
@@ -163,10 +148,9 @@ img {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px;
-    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 100%;
 }
 
 .modelcar {
@@ -174,9 +158,9 @@ img {
     color: #000000;
     width: 100%;
     height: 100%;
-    line-height: 30px;
-    padding: 5px;
-    margin: 8px;
+    line-height: 80%;
+    padding: 4%;
+    margin: 1%;
 }
 
 .modelcar img {
@@ -194,7 +178,7 @@ img {
 
 .model {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #eee;
     max-width: 100%;
 }
@@ -294,10 +278,14 @@ body {
 .me-ka- {
     justify-content: space-around;
     display: block;
+    margin-top: 3%;
 }
 
 .set {
-    margin: 40px;
+    padding: 0%;
+    margin: 5%;
+    display: flex;
+    font-size: x-small;
 }
 
 .btn {
@@ -309,8 +297,9 @@ body {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
     height: auto;
+    width: 90%;
     max-width: 90%;
-    padding: 0%;
+    padding: 1%;
     overflow: hidden;
     margin-right: 15%;
     box-sizing: border-box;
@@ -319,7 +308,8 @@ body {
 .upright {
     clear: both;
     height: 34%;
-    max-width: 90%;
+    width: 53%;
+    margin-top: 6%;
 }
 
 .btn-info {
@@ -342,17 +332,28 @@ body {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
     height: 34%;
+    width: 52%;
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 1%;
+    margin-top: 6%;
+}
+
+@media screen and (max-width:480px) {
+    #area {
+        max-width: auto;
+        transform: scale(1.2, 1);
+    }
 }
 
 .freeword {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
     border: #ffffff 1px solid;
     height: auto;
+    width: 90%;
     max-width: 90%;
     overflow: hidden;
     margin-right: 15%;
+    padding-bottom: 5%;
     box-sizing: border-box;
 }
 
@@ -421,7 +422,7 @@ body {
     position: relative;
     width: 78px;
     height: 48px;
-    margin: 0;
+    margin: 5%;
     border-radius: 50px;
     overflow: hidden;
     user-select: none;
@@ -496,14 +497,14 @@ body {
 }
 
 .under {
-    margin-top: 3%;
+    margin-top: 8%;
 }
 
 .toggle1 {
     position: relative;
     width: 78px;
     height: 48px;
-    margin: 0;
+    margin: 5%;
     border-radius: 50px;
     overflow: hidden;
     user-select: none;

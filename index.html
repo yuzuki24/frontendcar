@@ -4,7 +4,7 @@
 <head>
     <title>Tasting Cars</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, minimum-scale=1.0">
     <meta name="viewport" content="width=800">
     <meta name="Keywords" content="Cars">
     <meta name="Description" content="Tasting the cars">
@@ -18,8 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-    <link rel="stylesheet" href="style.css" media="screen and (max-width:480px)">
 
 
 </head>
@@ -181,7 +179,7 @@
                 <div class="container">
 
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car1.png" alt="matuda"><br>
+                        <img src="assets/img/catalog/content/car1.png" alt="matuda" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>Light car</p>
@@ -193,7 +191,7 @@
 
                     </div>
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car2.png" alt="suzuki"><br>
+                        <img src="assets/img/catalog/content/car2.png" alt="suzuki" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>Compact car</p>
@@ -205,7 +203,7 @@
 
                     </div>
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car3.png" alt="honda"><br>
+                        <img src="assets/img/catalog/content/car3.png" alt="honda" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>Minivan</p>
@@ -216,7 +214,7 @@
                         </div>
                     </div>
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+                        <img src="assets/img/catalog/content/car4.png" alt="honda" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>sedan</p>
@@ -228,7 +226,7 @@
 
                     </div>
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+                        <img src="assets/img/catalog/content/car5.png" alt="nissan" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>coupe</p>
@@ -240,7 +238,7 @@
 
                     </div>
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+                        <img src="assets/img/catalog/content/car6.png" alt="benz" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>Station Wagon</p>
@@ -252,7 +250,7 @@
 
                     </div>
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car7.png" alt="toyota"><br>
+                        <img src="assets/img/catalog/content/car7.png" alt="toyota" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>Suv</p>
@@ -264,7 +262,7 @@
 
                     </div>
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car8.png" alt="bmw"><br>
+                        <img src="assets/img/catalog/content/car8.png" alt="bmw" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>Open car</p>
@@ -276,7 +274,7 @@
 
                     </div>
                     <div class="modelcar">
-                        <img src="assets/img/catalog/content/car9.png" alt="benz"><br>
+                        <img src="assets/img/catalog/content/car9.png" alt="benz" class="imagcar"><br>
                         <div class="setumei">
                             <div>
                                 <p>One box</p>
@@ -333,7 +331,8 @@
                     <h3 align="center">Search by manufacturer</h3>
                     <div class="set">
                         Manufacturer:
-                        <select name="manufacturer">
+                        <div>
+                            <select name="manufacturer">
                         <option value="matuda">matuda</option>
                         <option value="suzuki">suzuki</option>
                         <option value="honda">honda</option>
@@ -341,8 +340,11 @@
                         <option value="bmw">bmw</option>
                         <option value="benz">benz</option>
                         <option value="toyota">toyota</option>
-                    </select>Vehicle type:
-                        <select name="vehicle type">
+                        </select>
+                        </div>
+                        Vehicle type:
+                        <div>
+                            <select name="vehicle type">
                         <option value=1>Light car</option>
                         <option value=2>Compact car</option>
                         <option value=3>Minivan</option>
@@ -352,11 +354,12 @@
                         <option value=5>Suv</option>
                         <option value=5>Open car</option>
                         <option value=5>One box</option>
-                    </select>
+                        </select>
+                        </div>
                     </div>
                     <div class="model">
                         <div class="modelcar">
-                            <img src="assets/img/catalog/content/car4.png" alt="honda"><br>
+                            <img src="assets/img/catalog/content/car4.png" alt="honda" class="imagcar"><br>
                             <div class="setumei">
                                 <div>
                                     <p>sedan</p>
@@ -367,7 +370,7 @@
                             </div>
                         </div>
                         <div class="modelcar">
-                            <img src="assets/img/catalog/content/car5.png" alt="nissan"><br>
+                            <img src="assets/img/catalog/content/car5.png" alt="nissan" class="imagcar"><br>
                             <div class="setumei">
                                 <div>
                                     <p>coupe</p>
@@ -378,7 +381,7 @@
                             </div>
                         </div>
                         <div class="modelcar">
-                            <img src="assets/img/catalog/content/car6.png" alt="benz"><br>
+                            <img src="assets/img/catalog/content/car6.png" alt="benz" class="imagcar"><br>
                             <div class="setumei">
                                 <div>
                                     <p>Station Wagon</p>
@@ -392,7 +395,7 @@
                     </div>
 
                     <h3><img src="assets/img/icon/delimiter.png" height="20" width="2">Option search</h3>
-                    <div class="set">
+                    <div class="set2">
                         Displacement:
                         <select name="displacement">
                         <option value=1>1000cc</option>
@@ -422,7 +425,7 @@
                 <!--フリーワード検索-->
                 <div class="freeword">
                     <h3>Free Word Search</h3>
-                    <input type="text" style="width: 400px; height: 40px;"><br>
+                    <input type="text" style="width: 80%; height: 40px; margin-bottom: 5%; margin-left: 9%; margin-top: 3%;"><br>
                     <div class="col-6 mx-auto text-nowrap d-flex align-items-end">
                         <button type="button" class="btn btn-info rounded-0">Search<img src="assets/img/icon/arrowButton.png"></button>
                     </div>
