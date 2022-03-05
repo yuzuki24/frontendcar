@@ -227,7 +227,7 @@ img {
     color: rgb(0, 195, 255);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .news-list .item a {
         flex-wrap: wrap;
     }
@@ -347,13 +347,13 @@ body {
 
 .freeword {
     box-shadow: 0px 0px 15px 0px rgba(197, 197, 197, 0.8);
-    border: #ffffff 1px solid;
+    border: #ffffff 2px solid;
     height: auto;
     width: 90%;
     max-width: 90%;
     overflow: hidden;
     margin-right: 15%;
-    padding-bottom: 5%;
+    padding-bottom: 9%;
     box-sizing: border-box;
 }
 
