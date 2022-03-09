@@ -4,8 +4,7 @@
 <head>
     <title>Tasting Cars</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="viewport" content="width=800">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="Keywords" content="Cars">
     <meta name="Description" content="Tasting the cars">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -32,7 +31,15 @@
 
         <nav>
 
-            <div class="button" tabindex="0" role="button">Click here for a list <img src="assets/img/icon/arrowButton.png" height="21" width="13" /></div>
+            <div class="button" tabindex="0" role="button">Click here for a list <img src="assets/img/icon/arrowButton.png" height="21" width="13" /></div><br>
+
+
+
+            <div class="menu">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
 
 
             <ul class="main-nav ml-auto">
@@ -474,7 +481,7 @@
     <footer>
         <div class="foot">
             <div class="menu-left">
-                <a href="index.html"><img class="logo" src="assets/img/logo/tc-black-logo.svg" alt="tasting cars"></a>
+                <a href="index.html"><img class="logo1" src="assets/img/logo/tc-black-logo.svg" alt="tasting cars"></a>
                 <p>
                     1-6-23 Honcho,<br> Aoba-ku, Sendai City, <br>Miyagi Prefecture INTELLEX<br>Sendai Building 8th floor
                 </p>
@@ -509,10 +516,13 @@
         const swiper = new Swiper('.swiper', {
             loop: true,
 
-            slidesPerView: 4,
+            slidesPerView: 1.5,
             breakpoints: {
-                // 768px以上の場合
-                768: {
+
+                480: {
+                    slidesPerView: 2
+                },
+                700: {
                     slidesPerView: 4
                 }
             },
@@ -554,6 +564,13 @@
             } else {
                 $(".toggle input").prop("checked", false);
             }
+        });
+    </script>
+    <script>
+        const menu = document.querySelector('.menu');
+
+        menu.addEventListener('click', function() {
+            this.classList.toggle('toggle2');
         });
     </script>
 

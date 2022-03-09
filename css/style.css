@@ -2,6 +2,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --nav-height: 10vh;
+    --nav-background: rgb(170, 166, 166, 0.95);
 }
 
 p {
@@ -63,8 +69,8 @@ img {
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 40px;
+    margin-right: 50%;
+    margin-left: 50%;
     bottom: 0px;
     list-style: none;
     float: right;
@@ -88,6 +94,51 @@ img {
 
 .main-nav a:hover {
     color: rgb(94, 163, 175);
+}
+
+.menu {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: none;
+    height: 20%;
+    width: 15%;
+    margin: 0;
+}
+
+.menu .bar {
+    width: 20px;
+    height: 2px;
+    background: #000;
+    border-radius: 5px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease;
+    transform-origin: left;
+    margin-left: auto;
+}
+
+.menu .bar1 {
+    margin-bottom: 5px;
+}
+
+.menu .bar3 {
+    margin-top: 5px;
+}
+
+.menu.toggle2 .bar1 {
+    transform-origin: left;
+    transform: rotate(45deg);
+}
+
+.menu.toggle2 .bar2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu.toggle2 .bar3 {
+    transform-origin: left;
+    transform: rotate(-45deg);
 }
 
 .page-header {
@@ -227,18 +278,6 @@ img {
     color: rgb(0, 195, 255);
 }
 
-@media screen and (max-width: 480px) {
-    .news-list .item a {
-        flex-wrap: wrap;
-    }
-    .news-list .item .date {
-        min-width: 100px;
-    }
-    .news-list .item .title {
-        margin-top: 10px;
-    }
-}
-
 * {
     box-sizing: border-box;
 }
@@ -336,13 +375,6 @@ body {
     margin-right: 5%;
     margin-left: 1%;
     margin-top: 6%;
-}
-
-@media screen and (max-width:480px) {
-    #area {
-        max-width: auto;
-        transform: scale(1.2, 1);
-    }
 }
 
 .freeword {
@@ -572,4 +604,103 @@ body {
 .toggle1.checked:after {
     left: 33px;
     box-shadow: 0 9px 28px -6px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 480px) {
+    .img01 {
+        height: 250px;
+    }
+    .textcontent {
+        position: absolute;
+        top: 8%;
+        text-align: justify;
+        margin-left: 10%;
+        word-break: break-all;
+    }
+    .swiper {
+        position: absolute;
+        width: 100%;
+        height: 40%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 100%;
+    }
+    .model {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .foot {
+        flex-direction: column;
+    }
+    .line {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 3%;
+        margin-right: 7%;
+        width: 85%;
+        height: 5px;
+        border-bottom: rgb(14, 152, 216);
+    }
+    .button {
+        white-space: nowrap;
+    }
+    .logo {
+        width: 210px;
+        height: 80px;
+        position: absolute;
+    }
+    .set {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .layout01 {
+        flex-direction: column;
+    }
+    #area {
+        width: 100%;
+        margin: auto;
+    }
+    .upright {
+        width: 100%;
+    }
+    .main-nav {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 70%;
+        width: 300px;
+        height: 50%;
+        background: var(--nav-background);
+        margin-top: var(--nav-height);
+        transition: 0.5s ease-out;
+        z-index: 2;
+    }
+    .main-nav li {
+        height: var(--nav-height);
+        line-height: var(--nav-height);
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+    .menu {
+        display: block;
+        margin-left: auto;
+        margin-top: 15%;
+    }
+    .menu.toggle2+.main-nav {
+        transform: translateX(-100%);
+    }
+    .container2 {
+        max-width: 100%;
+        margin: auto;
+    }
+    .freeword {
+        max-width: 100%;
+        margin: auto;
+    }
 }
